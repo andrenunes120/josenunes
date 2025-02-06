@@ -77,7 +77,7 @@ function Products() {
     {/* Conteúdo */}
     <div className="relative text-center">
       <h1 className="text-3xl font-bold">Garrafas de Gás Repsol</h1>
-      <p className="text-lg">Aproveite todas as vantagens de comprar gás Repsol.</p>
+      <p className="text-lg">Aproveite todas as vantagens de comprar gás Repsol</p>
     </div>
       </section>
 

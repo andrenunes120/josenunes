@@ -19,7 +19,7 @@ function Navbar() {
       }`}
     >
       <a href="/home">
-        <img src="/repsol.png" alt="Repsol Logo" className="h-12" />
+        <img src="/MainLogo.png" alt="Repsol Logo" className="h-12" />
       </a>
     </nav>
   );
