@@ -15,7 +15,7 @@ function App() {
          <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/home" element={<Home/>}/>
-          <Route path="/pages/products" element={<Products />} /> {/* Adicionar rota */}
+          <Route path="/products" element={<Products />} /> {/* Adicionar rota */}
          </Routes>
       </Router>
     </div>
