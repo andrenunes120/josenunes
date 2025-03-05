@@ -89,7 +89,7 @@ function Products() {
             <button
               key={category.id}
               className={`px-4 py-2 font-bold border-b-2 ${
-                activeCategory === category.id ? "border-orange-600 text-orange-600" : "border-transparent text-gray-700"
+                activeCategory === category.id ? "border-orange-600 text-orange-600" : "border-transparent text-gray-700 hover:text-orange-600"
               }`}
               onClick={() => setActiveCategory(category.id)}
             >
@@ -128,8 +128,8 @@ function Products() {
             </p>
             <p className="font-bold">Horário:</p>
             <ul className="mb-4">
-              <li>Segunda a Sexta: 8h - 18h</li>
-              <li>Sábado: 8h - 13h</li>
+              <li>Segunda a Sexta: 9h - 19h</li>
+              <li>Sábado: 9h - 14h</li>
               <li>Domingo: Fechado</li>
             </ul>
             <iframe

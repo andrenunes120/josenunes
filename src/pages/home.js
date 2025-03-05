@@ -12,8 +12,8 @@ function Home() {
           className="w-full h-64 object-cover filter brightness-50"
         />
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <h1 className="text-4xl md:text-5xl font-bold leading-tight ">
-            José Nunes lda
+          <h1 className="text-4xl md:text-5xl font-bold leading-tight ">
+            Concessionária oficial da Repsol
           </h1>
         </div>
       </section>
