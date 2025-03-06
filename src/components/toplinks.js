@@ -13,15 +13,15 @@ function TopLinks() {
   }, []);
 
   return (
-    <section className="bg-white border-t border-b border-gray-300 flex flex-wrap justify-center gap-4 py-2 w-full font-bold text-lg">
+    <section className="bg-white border-t border-b border-gray-300 flex flex-col md:flex-row justify-center gap-4 py-2 w-full font-bold text-lg">
       <a
-        href="#"
+        href="/energia"
         className={`px-4 py-2 rounded relative ${ // Added relative positioning
-          activeLink === '/' ? "text-orange-600" : "text-gray-700 hover:text-orange-600"
+          activeLink === '/energia' ? "text-orange-600" : "text-gray-700 hover:text-orange-600"
         } transition`}
       >
         Eletricidade
-        {activeLink === '/' && <span className="absolute bottom-0 left-0 w-full h-1 bg-orange-600"></span>} {/* Orange bar */}
+        {activeLink === '/energia' && <span className="absolute bottom-0 left-0 w-full h-1 bg-orange-600"></span>} {/* Orange bar */}
       </a>
       <a
         href="/products"
@@ -30,10 +30,10 @@ function TopLinks() {
         } transition`}
       >
         Garrafas de Gás
-        {activeLink === '/products' && <span className="absolute bottom-0 left-0 w-full h-0.5 bg-orange-600"></span>} {/* Orange bar */}
+        {activeLink === '/products' && <span className="absolute bottom-0 right-0 left-0 w-1/2 md:w-full h-0.5 bg-orange-600 mx-auto"></span>} {/* Orange bar */}
       </a>
       <a
-        href="#"
+        href="/gasoleo"
         className={`px-4 py-2 rounded relative ${ // Added relative positioning
           activeLink === '/gasoleo' ? "text-orange-600" : "text-gray-700 hover:text-orange-600"
         } transition`}
