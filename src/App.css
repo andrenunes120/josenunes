@@ -1,7 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .App {
   text-align: center;
 }
-
+body {
+  font-family: 'Roboto', sans-serif;
+}
 .no-scroll {
   overflow: hidden;
+}
+
+/* Add this to your App.css or a dedicated CSS file */
+.popup-container {
+  z-index: 1000; /* Ensure the popup is always on top */
+}
+
+.popup-container:focus-within {
+  outline: none; /* Remove default focus outline */
+}
+
+/* Optional: Style the overlay to prevent interaction */
+.fixed.inset-0.flex.items-center.justify-center.bg-black.bg-opacity-50 {
+  pointer-events: auto; /*  allow interaction with the popup */
+}
+
+/* Optional: Style the popup to prevent interaction with elements behind */
+.relative.bg-white.p-8.rounded.shadow-lg {
+  pointer-events: auto; /* allow interaction with the popup */
 }
